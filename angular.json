@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SPA9"
+    }
+  },
+  "defaultProject": "SPA9",
+  "cli": {
+    "analytics": "02aa8438-50f7-4e4f-acbe-33c7478855ff"
+  }
 }
