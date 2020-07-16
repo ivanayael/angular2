@@ -1,0 +1,36 @@
+
+
+<h1>Heroes <small>de Marvel y DC</small></h1>
+<hr>
+
+<div class="card-columns">
+  <div class="card" *ngFor="let heroe of heroes">
+    <img class="card-img-top" src="{{heroe['img']}}" alt="{{heroe['nombre']}}">
+    <div class="card-body">
+      <h5 class="card-title">{{heroe["nombre"]}}</h5>
+      <p class="card-text">{{heroe["bio"]}}</p>
+      <p class="card-text"><small class="text-muted">{{heroe["aparicion"]}}</small></p>
+      <p *ngIf="heroe.nombre == 'Aquaman'">
+        <a routerLink="/heroe/0" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+      <p *ngIf="heroe.nombre == 'Batman'">
+        <a routerLink="/heroe/1" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+      <p *ngIf="heroe.nombre == 'Daredevil'">
+        <a routerLink="/heroe/2" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+      <p *ngIf="heroe.nombre == 'Hulk'">
+        <a routerLink="/heroe/3" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+      <p *ngIf="heroe.nombre == 'Linterna Verde'">
+        <a routerLink="/heroe/4" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+      <p *ngIf="heroe.nombre == 'Spider-Man'">
+        <a routerLink="/heroe/5" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+      <p *ngIf="heroe.nombre == 'Wolverine'">
+        <a routerLink="/heroe/6" class="btn btn-outline-primary btn-block">Ver mas...</a>
+      </p>
+    </div>
+  </div>
+</div>
